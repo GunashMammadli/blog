@@ -1,0 +1,26 @@
+﻿@model SliderCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container-fluid">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control">
+            <span asp-validation-for="Title"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="ImagePath" class="form-label"></label>
+            <input asp-for="ImagePath" class="form-control">
+            <span asp-validation-for="ImagePath"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Text" class="form-label"></label>
+            <input asp-for="Text" class="form-control">
+            <span asp-validation-for="Text"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
